@@ -1,0 +1,17 @@
+{
+    "id": 1,
+    "name": "TakeMe",
+    "phoneCountryCode": "972",
+    "phone": "0509648444",
+    "email": "takeme.center@gmail.com",
+    "languageId": 1,
+    "logoPath": "https://takeme-all.com/app/resources/images/profile/logo.png",
+    "coverPath": "https://takeme-all.com/app/resources/images/profile/cover.jpg",
+    "footerText": "TakeMe",
+    "copyRightYear": 2022,
+    "facebookLink": "https://www.facebook.com/ghajar.takeme",
+    "instagramLink": "https://www.instagram.com/ghajar.takeme",
+    "whatsappLink": "https://wa.me/9720509648444",
+    "tiktokLink": null,
+    "backendApiPrefix": "https://takeme-all.com/app/endpoints"
+}

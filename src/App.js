@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import CategoryWiseProd from "./pages/CategoryWiseProd";
+import { apihelp } from "./config";
+import axios from "axios";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import appInfo from "../src/assets/data/appInfo.json";
+import { appInfoAction } from "./store/Slice/appInfoSlice";
+// import appInfoSlice from "./store/Slice/appInfoSlice";
 function App() {
+  const dispatch = useDispatch();
+  dispatch(appInfoAction.addDetail(appInfo));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CategoryWiseProd />
+    </>
   );
 }
 

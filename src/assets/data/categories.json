@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "name": "الكل",
+        "description": null,
+        "imagePath": "https://takeme-all.com/app/resources/images/categories/all.jpg",
+        "sortIndex": 2,
+        "createdDate": "2023-03-15T21:36:16.000+00:00",
+        "updatedDate": "2023-03-15T21:36:16.000+00:00",
+        "imageName": "all.jpg"
+    },
+    {
+        "id": 2,
+        "name": "سياح",
+        "description": "null",
+        "imagePath": "https://takeme-all.com/app/resources/images/categories/tourists.jpg",
+        "sortIndex": 3,
+        "createdDate": "2023-03-15T21:36:16.000+00:00",
+        "updatedDate": "2023-04-11T20:37:26.000+00:00",
+        "imageName": "tourists.jpg"
+    },
+    {
+        "id": 3,
+        "name": "تخييم",
+        "description": "شرح عن التخييم",
+        "imagePath": "https://takeme-all.com/app/resources/images/categories/camping.jpg",
+        "sortIndex": 4,
+        "createdDate": "2023-03-15T21:36:16.000+00:00",
+        "updatedDate": "2023-03-15T21:36:16.000+00:00",
+        "imageName": "camping.jpg"
+    },
+    {
+        "id": 4,
+        "name": "بناء",
+        "description": null,
+        "imagePath": "https://takeme-all.com/app/resources/images/categories/build-and-renovations.jpg",
+        "sortIndex": 5,
+        "createdDate": "2023-03-15T21:36:16.000+00:00",
+        "updatedDate": "2023-03-15T21:36:16.000+00:00",
+        "imageName": "build-and-renovations.jpg"
+    },
+    {
+        "id": 5,
+        "name": "ادوات",
+        "description": "ادوات مميزة",
+        "imagePath": "https://takeme-all.com/app/resources/images/categories/others.jpg",
+        "sortIndex": 6,
+        "createdDate": "2023-03-15T21:36:16.000+00:00",
+        "updatedDate": "2023-03-15T21:36:16.000+00:00",
+        "imageName": "others.jpg"
+    }
+    
+]

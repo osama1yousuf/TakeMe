@@ -6,7 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.gr{
+  background-color: #02ac84;
+}
+.sidebar-open {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -27,6 +32,20 @@
 .App-link {
   color: #61dafb;
 }
+/* .rangeinput[type = 'range']::-webkit-slider-thumb:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: -285px;
+  top: -28px;
+  width: 300px;
+  height: 140px;
+  background: #9fe472;
+  transform: rotateX(90deg);
+  transform-origin: 0 0px 0;
+  transform: rotateX(90deg) translateY(-140px) translateZ(-18px);
+} */
+
 
 @keyframes App-logo-spin {
   from {
