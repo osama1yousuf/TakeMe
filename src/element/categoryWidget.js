@@ -10,8 +10,10 @@ const CategoryWidget = (props) => {
         }`}
         style={{
           cursor: "pointer",
-          border: "1px solid gray",
-          padding: "5px",
+          border:props.id === props.selectedCategory ? "5px solid #02ac84" : "1px solid gray",
+          padding:props.id === props.selectedCategory ? "1px" : "5px",
+          // border: "1px solid gray",
+          // padding: "5px",
           width: "55px",
           height: "55px",
         }}
