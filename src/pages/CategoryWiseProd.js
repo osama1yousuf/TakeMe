@@ -3,7 +3,11 @@ import Defaultlayout from "../component/defaultLayout";
 import { useSelector } from "react-redux";
 import CategoryWidget from "../element/categoryWidget";
 import categories from "../assets/data/categories.json";
+import "../assets/style/productCategary.css";
+import product from "../assets/data/product.json";
+import Productwidget from "../element/Productwidget";
 const CategoryWiseProd = () => {
+  const [range, setRange] = useState(100);
   const info = useSelector((state) => state.appInfo.appInfo);
   const [selectedCategory, setSelectedCategory] = useState(categories[0].id);
 
@@ -11,6 +15,21 @@ const CategoryWiseProd = () => {
     setSelectedCategory(id);
   };
 
+  function handleRangeChange(event) {
+    const val =
+      (event.target.value - event.target.min) /
+      (event.target.max - event.target.min);
+    event.target.style.backgroundImage =
+      "-webkit-gradient(linear,right top, left top,  " +
+      "color-stop(" +
+      val +
+      ", #02ac84 )," +
+      "color-stop(" +
+      val +
+      ",  #C5C5C5)" +
+      ")";
+    setRange(event.target.value);
+  }
   return (
     <Defaultlayout>
       <img width={"100%"} src={info.coverPath} alt="coverPath" />
@@ -33,18 +52,46 @@ const CategoryWiseProd = () => {
               : ""}
           </div>
         </div>
-        <div className="flex justify-center aligin-center m-auto">
+        <div className="range-wrap flex justify-center aligin-center m-auto">
           <input
-            className="rangeinput"
-            style={{
-              width: "90%",
-              direction: "rtl",
-              background:
-                "linear-gradient(to right, green 0%, green 50%, #fff 50%, #fff 100%)",
-            }}
+            min={0}
+            max={100}
+            step={50}
+            value={range}
+            onInput={handleRangeChange}
+            id="salePrice"
+            className="rangeinput my-2"
             type="range"
           ></input>
         </div>
+      </div>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns:
+            range == 50
+              ? "1fr 1fr"
+              : range == 0
+              ? "1fr 1fr 1fr 1fr"
+              : range == 100
+              ? "1fr"
+              : "",
+        }}
+        className="w-full bg-gray-200"
+      >
+        {product.map((val, ind) => {
+          return (
+            <Productwidget
+              key={val.id}
+              totalNumberOfProducts={val.totalNumberOfProducts}
+              imagePath={val.imagePath}
+              title={val.title}
+              subTitle={val.saleDetails.title}
+              priceStartingFromMsg={val.saleDetails.priceStartingFromMsg}
+              range={range}
+            />
+          );
+        })}
       </div>
     </Defaultlayout>
   );

@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "title": "جولات شرح",
+        "description": null,
+        "imagePath": "https://takeme-all.com/app/resources/images/products-types/hdrkhot.png",
+        "rentDetails": null,
+        "saleDetails": {
+            "title": "تفاصيل البيع",
+            "priceStartingFrom": 350,
+            "priceStartingFromMsg": "السعر يبدأ من 350 شيكل"
+        },
+        "totalNumberOfProducts": 3
+    },
+    {
+        "id": 2,
+        "title": "جولات تذوق",
+        "description": null,
+        "imagePath": "https://takeme-all.com/app/resources/images/products-types/t3emot.png",
+        "rentDetails": null,
+        "saleDetails": {
+            "title": "تفاصيل البيع",
+            "priceStartingFrom": 400,
+            "priceStartingFromMsg": "السعر يبدأ من 400 شيكل"
+        },
+        "totalNumberOfProducts": 1
+    },
+    {
+        "id": 1,
+        "title": "جولات شرح",
+        "description": null,
+        "imagePath": "https://takeme-all.com/app/resources/images/products-types/hdrkhot.png",
+        "rentDetails": null,
+        "saleDetails": {
+            "title": "تفاصيل البيع",
+            "priceStartingFrom": 350,
+            "priceStartingFromMsg": "السعر يبدأ من 350 شيكل"
+        },
+        "totalNumberOfProducts": 3
+    },
+    {
+        "id": 2,
+        "title": "جولات تذوق",
+        "description": null,
+        "imagePath": "https://takeme-all.com/app/resources/images/products-types/t3emot.png",
+        "rentDetails": null,
+        "saleDetails": {
+            "title": "تفاصيل البيع",
+            "priceStartingFrom": 400,
+            "priceStartingFromMsg": "السعر يبدأ من 400 شيكل"
+        },
+        "totalNumberOfProducts": 1
+    }
+]

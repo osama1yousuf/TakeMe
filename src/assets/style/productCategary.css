@@ -1,0 +1,42 @@
+.range-wrap {
+    position: relative;
+    direction: rtl;
+}
+
+
+
+#salePrice {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    border-radius: 5px;
+    width: 90%;
+    /* direction: rtl; */
+    height: 2px;
+    background-image: -webkit-gradient( linear,right top, left top,  color-stop(0.15, #02ac84), color-stop(0.07, #C5C5C5));
+}
+
+#salePrice::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: #02ac84;
+    border: 1px solid #02ac84;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: black;
+    cursor: pointer;
+}
