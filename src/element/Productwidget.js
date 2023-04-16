@@ -3,15 +3,16 @@ import React from "react";
 const Productwidget = (props) => {
   return (
     <div
+    onClick={(e) => props.productClick(e)}
       style={{
         direction: "rtl",
       }}
-      className={` h-auto p-2 bg-white m-2`}
+      className={` h-auto py-1 bg-white m-1`}
     >
       <div
         style={{
-          width: "25px",
-          height: "25px",
+          width: "35px",
+          height: "35px",
           borderRadius: "50%",
           textAlign: "center",
           background: "#02ac84",
@@ -20,11 +21,11 @@ const Productwidget = (props) => {
         }}
         className="relative top-2 right-5"
       >
-        {props.totalNumberOfProducts}
+       <p style={{fontSize:"16px" , padding:"4px"}}> {props.totalNumberOfProducts}</p>
       </div>
       <div className="flex justify-center aligin-center">
         <img
-          className="p-5"
+          className={`${props.range < 100 ? "p-1" : 'p-4'}`}
           width={"100%"}
           height={"auto"}
           src={props.imagePath}

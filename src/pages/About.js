@@ -1,13 +1,17 @@
 import React , {useState ,useEffect} from "react";
 import Header from "../component/header";
 import Sidebar from "../component/sidebar";
+import { useDispatch } from "react-redux";
+import { appInfoAction } from "../store/Slice/appInfoSlice";
 
 const About = (props)=>{
+  const dispatch = useDispatch()
     const [showSideBar, setShowSideBar] = useState(false);
 const handleSideBar = () => {
     setShowSideBar(!showSideBar);
   };
 useEffect(() => {
+    dispatch(appInfoAction.sideBar(false))
     if (showSideBar) {
       document.body.classList.add("sidebar-open");
     } else {

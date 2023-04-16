@@ -1,22 +1,31 @@
 import React from "react";
-import { Bars3Icon } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-
+ import {MdKeyboardBackspace , MdMenu} from "react-icons/md";
 const Header = (props) => {
+  const navigate = useNavigate()
+  const showSideBar = useSelector((state)=> state.appInfo.showSideBar)
   const info = useSelector((state) => state.appInfo.appInfo);
+  const handleBack = ()=>{
+    navigate(-1)
+  }
   return (
-    <div className="w-full max-w-screen-xxl gr flex justify-evenly">
+    <div className="w-full max-w-screen-xxl gr flex justify-around">
       <div className="my-4 mx-1">
-        <button
+        {showSideBar === true ? <button
           onClick={props.handleSideBar}
           type="button"
           className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          //   onClick={() => setMobileMenuOpen(true)}
         >
-          <span className="sr-only">Open main menu</span>
-          <Bars3Icon className="h-5 w-5 text-white" aria-hidden="true" />
-        </button>
+         <MdMenu style={{fontSize:"25px"}} className="text-white" />
+        </button> : <button
+          onClick={handleBack}
+          type="button"
+          className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+        >
+         <MdKeyboardBackspace style={{fontSize:"25px"}} className="text-white" />
+        </button>}
       </div>
       <div className="my-4 mx-1">
        {props.children}
