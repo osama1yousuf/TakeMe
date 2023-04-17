@@ -1,0 +1,183 @@
+[
+    {
+        "id": 1,
+        "name": "Ameen Taher",
+        "phoneCountryCode": "972",
+        "phone": "0506331658",
+        "whatsappLink": "https://wa.me/9720506331658",
+        "navigateLink": "https://goo.gl/maps/JGRvdZJfEPbfkbAV7",
+        "imagePath": "https://takeme-all.com/app/resources/providers/images/default_profile_image.png",
+        "workDaysAndHours": "Sun-Fri, 16:00 - 18:00",
+        "orderMinDuration": null,
+        "country": "israel",
+        "city": "Ghajar",
+        "email": null,
+        "activeStatus": "Active",
+        "statusDetails": "",
+        "ratingsScore": null,
+        "ratingsCount": 0,
+        "infoMessage": "שיחת וואטסאפ תיפתח עם הספק. \n שאל את הספק כל שאלה שתרצה לגבי המוצרים או השירותים שלו. \n קבע איתו מועד לקבלת המוצר או השירות ושלם לו ברגע שתקבל את המוצר או השירות. \n \n אם אתה נתקל בבעיות עם הספק, תשלח לנו הודעה.\n אתה יכול גם לדרג את הספק באפליקציה זו.",
+        "productTypeId": 1,
+        "productTypeTitle": "סיורי הדרכות",
+        "totalProducts": 2,
+        "totalProductsOfTypeId": 2,
+        "localtionMsg": "Ghajar",
+        "productsCountMsg": "יש לי 2 סיורי הדרכות ועוד 0 מוצרים אחרים",
+        "ratingMsg": "שלח חוות דעת",
+        "products": {
+            "1": [
+                {
+                    "id": 1,
+                    "name": "סיור ליחיד או זוגי",
+                    "description": "<section>\n<p>\nסיור טעימות קינוחים טעים ומיוחד בכפר עגר\n</p>\n<ul-list>\n<li>פגישה עם מלווה מקומי</li>\n<li>טעימות קינוחים בדוכן במצפה הכפר</li>\n<li>טעימות קינוחים מסורתיים של הכפר מול החצבאני</li>\n<li>טעימות ממתקי אלחטיב אצל השף המפורסם מתוכנית הקינוח המושלם</li>\n</ul-list>\n<div>\n<img-key>https://eusopht.com/muneeb_icons/time.png</img-key>\n<span-key>משך הסיור :</span-key>\n<span>שעתיים</span>\n</div>\n<div>\n<img-key>https://eusopht.com/muneeb_icons/group.png</img-key>\n<span-key>מנימום משתתפים :</span-key>\n<span>7</span>\n</div>\n<div>\n<img-key>https://eusopht.com/muneeb_icons/user.png</img-key>\n<span-key>מקסימום משתתפים :</span-key>\n<span>20</span>\n</div>\n<p-comment>\nהסיור הזה מתאים לגיל 16 ומעלה\n</p-comment>\n</section>",
+                    "navigateLink": "https://goo.gl/maps/JGRvdZJfEPbfkbAV7",
+                    "comments": "המחיר לכל הקבוצה",
+                    "productTypeId": 1,
+                    "providerId": 1,
+                    "rentDetails": null,
+                    "saleDetails": {
+                        "title": "מידע למכירה",
+                        "price": 400,
+                        "status": null,
+                        "priceMsg": "מחיר מכירה 400 שח",
+                        "statusMsg": "מצב המוצר null"
+                    },
+                    "images": [
+                        {
+                            "id": 1,
+                            "productId": 1,
+                            "imagePath": "https://takeme-all.com/app/resources/providers/0506544232/products/images/1/1.jpg",
+                            "comments": "",
+                            "createdDate": null,
+                            "updatedDate": null
+                        },
+                        {
+                            "id": 2,
+                            "productId": 1,
+                            "imagePath": "https://takeme-all.com/app/resources/providers/0506544232/products/images/1/2.jpg",
+                            "comments": "",
+                            "createdDate": null,
+                            "updatedDate": null
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "סיור לשעה",
+                    "description": "<section>\n<p>\nסיור טעימות קינוחים טעים ומיוחד בכפר עגר\n</p>\n<ul-list>\n<li>פגישה עם מלווה מקומי</li>\n<li>טעימות קינוחים בדוכן במצפה הכפר</li>\n<li>טעימות קינוחים מסורתיים של הכפר מול החצבאני</li>\n<li>טעימות ממתקי אלחטיב אצל השף המפורסם מתוכנית הקינוח המושלם</li>\n</ul-list>\n<div>\n<img-key>https://eusopht.com/muneeb_icons/time.png</img-key>\n<span-key>משך הסיור :</span-key>\n<span>שעתיים</span>\n</div>\n<div>\n<img-key>https://eusopht.com/muneeb_icons/group.png</img-key>\n<span-key>מנימום משתתפים :</span-key>\n<span>7</span>\n</div>\n<div>\n<img-key>https://eusopht.com/muneeb_icons/user.png</img-key>\n<span-key>מקסימום משתתפים :</span-key>\n<span>20</span>\n</div>\n<p-comment>\nהסיור הזה מתאים לגיל 16 ומעלה\n</p-comment>\n</section>",
+                    "navigateLink": "https://goo.gl/maps/JGRvdZJfEPbfkbAV7",
+                    "comments": "המחיר רק להדרכה",
+                    "productTypeId": 1,
+                    "providerId": 1,
+                    "rentDetails": null,
+                    "saleDetails": {
+                        "title": "מידע למכירה",
+                        "price": 350,
+                        "status": null,
+                        "priceMsg": "מחיר מכירה 350 שח",
+                        "statusMsg": "מצב המוצר null"
+                    },
+                    "images": [
+                        {
+                            "id": 3,
+                            "productId": 2,
+                            "imagePath": "https://takeme-all.com/app/resources/providers/0506544232/products/images/2/1.jpg",
+                            "comments": "",
+                            "createdDate": null,
+                            "updatedDate": null
+                        },
+                        {
+                            "id": 4,
+                            "productId": 2,
+                            "imagePath": "https://takeme-all.com/app/resources/providers/0506544232/products/images/2/2.jpg",
+                            "comments": "",
+                            "createdDate": null,
+                            "updatedDate": null
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Hussein",
+        "phoneCountryCode": "972",
+        "phone": "0506544232",
+        "whatsappLink": "https://wa.me/9720506544232",
+        "navigateLink": "https://goo.gl/maps/VFn3CD7NDVPM8DZ37",
+        "imagePath": "https://takeme-all.com/app/resources/providers/images/default_profile_image.png",
+        "workDaysAndHours": "Sun-Thu, 16:00 - 17:00",
+        "orderMinDuration": null,
+        "country": "israel",
+        "city": "Ghajar",
+        "email": null,
+        "activeStatus": "Active",
+        "statusDetails": "",
+        "ratingsScore": null,
+        "ratingsCount": 0,
+        "infoMessage": "שיחת וואטסאפ תיפתח עם הספק. \n שאל את הספק כל שאלה שתרצה לגבי המוצרים או השירותים שלו. \n קבע איתו מועד לקבלת המוצר או השירות ושלם לו ברגע שתקבל את המוצר או השירות. \n \n אם אתה נתקל בבעיות עם הספק, תשלח לנו הודעה.\n אתה יכול גם לדרג את הספק באפליקציה זו.",
+        "productTypeId": 1,
+        "productTypeTitle": "סיורי הדרכות",
+        "totalProducts": 1,
+        "totalProductsOfTypeId": 1,
+        "localtionMsg": "Ghajar",
+        "productsCountMsg": "יש לי 1 סיורי הדרכות ועוד 0 מוצרים אחרים",
+        "ratingMsg": "שלח חוות דעת",
+        "products": {
+            "1": [
+                {
+                    "id": 3,
+                    "name": "סיור לשעה",
+                    "description": "<section>\n<p>\nסיור טעימות קינוחים טעים ומיוחד בכפר עגר\n</p>\n<ul-list>\n<li>פגישה עם מלווה מקומי</li>\n<li>טעימות קינוחים בדוכן במצפה הכפר</li>\n<li>טעימות קינוחים מסורתיים של הכפר מול החצבאני</li>\n<li>טעימות ממתקי אלחטיב אצל השף המפורסם מתוכנית הקינוח המושלם</li>\n</ul-list>\n<div>\n<img-key>https://eusopht.com/muneeb_icons/time.png</img-key>\n<span-key>משך הסיור :</span-key>\n<span>שעתיים</span>\n</div>\n<div>\n<img-key>https://eusopht.com/muneeb_icons/group.png</img-key>\n<span-key>מנימום משתתפים :</span-key>\n<span>7</span>\n</div>\n<div>\n<img-key>https://eusopht.com/muneeb_icons/user.png</img-key>\n<span-key>מקסימום משתתפים :</span-key>\n<span>20</span>\n</div>\n<p-comment>\nהסיור הזה מתאים לגיל 16 ומעלה\n</p-comment>\n</section>",
+                    "navigateLink": "https://goo.gl/maps/JGRvdZJfEPbfkbAV7",
+                    "comments": "המחיר רק להדרכה",
+                    "productTypeId": 1,
+                    "providerId": 2,
+                    "rentDetails": null,
+                    "saleDetails": {
+                        "title": "מידע למכירה",
+                        "price": 400,
+                        "status": null,
+                        "priceMsg": "מחיר מכירה 400 שח",
+                        "statusMsg": "מצב המוצר null"
+                    },
+                    "images": [
+                        {
+                            "id": 5,
+                            "productId": 3,
+                            "imagePath": "https://takeme-all.com/app/resources/providers/0506544232/products/images/3/1.jpg",
+                            "comments": "",
+                            "createdDate": null,
+                            "updatedDate": null
+                        },
+                        {
+                            "id": 6,
+                            "productId": 3,
+                            "imagePath": "https://takeme-all.com/app/resources/providers/0506544232/products/images/3/2.jpg",
+                            "comments": "",
+                            "createdDate": null,
+                            "updatedDate": null
+                        },
+                        {
+                            "id": 7,
+                            "productId": 3,
+                            "imagePath": "https://takeme-all.com/app/resources/providers/0506544232/products/images/3/3.jpg",
+                            "comments": "",
+                            "createdDate": null,
+                            "updatedDate": null
+                        },
+                        {
+                            "id": 8,
+                            "productId": 3,
+                            "imagePath": "https://takeme-all.com/app/resources/providers/0506544232/products/images/3/4.jpg",
+                            "comments": "",
+                            "createdDate": null,
+                            "updatedDate": null
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]
