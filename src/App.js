@@ -10,6 +10,7 @@ import {Routes , Route} from 'react-router-dom'
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import About from "./pages/About";
 import SallerCategary from "./pages/SallerCategary";
+import SingleSaller from "./pages/SingleSaller";
 function App() {
   const dispatch = useDispatch();
   dispatch(appInfoAction.addDetail(appInfo));
@@ -20,6 +21,7 @@ function App() {
       <Route path="/about" element={<About/>} />
       <Route path="/termcondition" element={<PrivacyPolicy/>} />
       <Route path="/sallercategary" element={<SallerCategary/>} />
+      <Route path="/singlesaller" element={<SingleSaller/>} />
     </Routes>
   );
 }
