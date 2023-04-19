@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 const Footer = () => {
   const info = useSelector((state) => state.appInfo.appInfo);
   return (
-    <div className="bg-black flex justify-between w-full relative">
+    <div className="bg-black flex justify-between w-full ">
       <h2 className="text-white">TakeMe</h2>
       <h2>ⓒ 2022</h2>
       <div className="flex">

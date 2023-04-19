@@ -43,8 +43,9 @@ const Defaultlayout = (props) => {
         <Sidebar showSide={showSideBar} />
         <div className={` w-full absolute`}>{props.children}</div>
       </div>
-
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 };
