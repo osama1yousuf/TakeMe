@@ -120,7 +120,7 @@ const CategoryWiseProd = () => {
       ) : null}
       <Defaultlayout>
         <img width={"100%"} src={info.coverPath} alt="coverPath" />
-        <div>
+        <div style={{position:'sticky' , top:"60px" , background:"white" ,zIndex:'1'}}>
           <div className="w-full h-auto block overflow-x-scroll">
             <div className="w-fit-content h-auto overflow-x-scroll flex flex-row-reverse flex-rtl text-left">
               {categories.length > 0

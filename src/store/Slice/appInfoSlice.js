@@ -3,7 +3,8 @@ export const appInfoSlice = createSlice({
   name: "appInfo",
   initialState: {
     appInfo: {},
-    showSideBar:true
+    showSideBar:true,
+    hamBurger:false
   },
   reducers: {
     addDetail(state, action) {
@@ -11,7 +12,11 @@ export const appInfoSlice = createSlice({
     },
     sideBar(state ,action){
       state.showSideBar = action.payload
+    },
+    handleHamburger(state , action){
+     state.hamBurger = action.payload
     }
+
   },
 });
 

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import React, { useState , useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { appInfoAction } from "../store/Slice/appInfoSlice";
 
 const Sidebar = (props) => {
+  const dispatch = useDispatch()
   const info = useSelector((state) => state.appInfo.appInfo);
   const [showLangSubMenu, setShowLangSubMenu] = useState(false);
   const [showItemSubMenu, setShowItemSubMenu] = useState(false);
@@ -13,8 +15,34 @@ const Sidebar = (props) => {
   const handleSubItemMenuClick = () => {
     setShowItemSubMenu(!showItemSubMenu);
   };
+  const touchRef = useRef(null);
+
+  let startX = 0;
+  let startY = 0;
+
+  const handleTouchStart = (event) => {
+    startX = event.touches[0].clientX;
+    startY = event.touches[0].clientY;
+  };
+
+  const handleTouchMove = (event) => {
+    const currentX = event.touches[0].clientX;
+    const currentY = event.touches[0].clientY;
+
+    const deltaX = currentX - startX;
+    const deltaY = currentY - startY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX < 0) {
+      dispatch(appInfoAction.handleHamburger(false))
+    } else if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX > 0) {
+      console.log('right swipe');
+    }
+  };
   return (
     <div
+    ref={touchRef}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
       className={
         props.showSide === true
           ? "w-64 absolute z-10 top-0  shadow bg-white h-screen"

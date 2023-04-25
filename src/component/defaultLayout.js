@@ -2,18 +2,22 @@ import React, { useState, useEffect } from "react";
 import Header from "./header";
 import Footer from "./Footer";
 import Sidebar from "./sidebar";
+import { useDispatch, useSelector } from "react-redux";
+import { appInfoAction } from "../store/Slice/appInfoSlice";
 const Defaultlayout = (props) => {
-  const [showSideBar, setShowSideBar] = useState(false);
+  const info = useSelector((state) => state.appInfo.hamBurger);
+  const dispatch = useDispatch()
+  console.log(info);
   const handleSideBar = () => {
-    setShowSideBar(!showSideBar);
+    dispatch(appInfoAction.handleHamburger(true))
   };
   useEffect(() => {
-    if (showSideBar) {
+    if (info) {
       document.body.classList.add("sidebar-open");
     } else {
       document.body.classList.remove("sidebar-open");
     }
-  }, [showSideBar]);
+  }, [info]);
   return (
     <div>
       <Header handleSideBar={handleSideBar}>
@@ -40,8 +44,8 @@ const Defaultlayout = (props) => {
         </div>
       </Header>
       <div className="flex">
-        <Sidebar showSide={showSideBar} />
-        <div className={` w-full absolute`}>{props.children}</div>
+        <Sidebar showSide={info} />
+        <div className={` w-full `}>{props.children}</div>
       </div>
       <div>
         <Footer />

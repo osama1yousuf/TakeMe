@@ -11,7 +11,7 @@ const Header = (props) => {
     navigate(-1);
   };
   return (
-    <div className="w-full max-w-screen-xxl gr flex justify-around">
+    <div style={{position:'sticky' , top:"0" , zIndex:"1"}} className="w-full max-w-screen-xxl gr flex justify-around">
       <div className="my-4 mx-1">
         {showSideBar === true ? (
           <button
