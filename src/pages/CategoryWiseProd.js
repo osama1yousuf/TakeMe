@@ -45,7 +45,7 @@ const CategoryWiseProd = () => {
       setModalValue(e);
       setShowModal(true);
     } else {
-      navigate("/sallercategary");
+      navigate("/sallercategary", { state: { value: e.title } });
     }
   };
   const salerList = () => {
@@ -120,7 +120,14 @@ const CategoryWiseProd = () => {
       ) : null}
       <Defaultlayout>
         <img width={"100%"} src={info.coverPath} alt="coverPath" />
-        <div style={{position:'sticky' , top:"60px" , background:"white" ,zIndex:'1'}}>
+        <div
+          style={{
+            position: "sticky",
+            top: "60px",
+            background: "white",
+            zIndex: "1",
+          }}
+        >
           <div className="w-full h-auto block overflow-x-scroll">
             <div className="w-fit-content h-auto overflow-x-scroll flex flex-row-reverse flex-rtl text-left">
               {categories.length > 0

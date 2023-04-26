@@ -1,0 +1,18 @@
+.rec.rec-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+ 
+    background-color: black;
+  }
+  
+  .rec.rec-dot_active {
+
+    background-color: #02ac84;
+  }
+  .jrqawY{
+    box-shadow: rgb(252, 252, 252) 0px 0px 1px 3px !important;
+  }
+  .eVXyLj {
+    box-shadow: rgb(252, 252, 252) 0px 0px 1px 3px !important;
+  }
